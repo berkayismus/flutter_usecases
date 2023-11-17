@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_usecases/ignore_pointer/ignore_pointer.dart';
+import 'package:flutter_usecases/ignore_pointer/my_ignore_pointer.dart';
 
 class IgnoringPage extends StatefulWidget {
   const IgnoringPage({super.key});
@@ -25,6 +25,17 @@ class _IgnoringPageState extends State<IgnoringPage> {
   Widget build(BuildContext context) {
     return MyIgnorePointer(
       ignoring: _isLoading,
+      onWillPop: !_isLoading
+          ? () async {
+              //_showCancelApprovalQuestion();
+              debugPrint("sayfa kapatılıyor");
+              return Future.value(true);
+            }
+          : () async {
+              debugPrint("sayfa kapatılamaz !!!");
+
+              return Future.value(false);
+            },
       child: Scaffold(
         appBar: AppBar(),
         body: Column(
