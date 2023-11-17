@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_usecases/image_network/image_network_page.dart';
+import 'package:flutter_usecases/ignoring_page.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Usecases',
-      home: ImageNetworkPage(),
+      home: IgnoringPage(),
     );
   }
 }
