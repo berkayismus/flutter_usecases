@@ -30,24 +30,25 @@ class _EnhancedEnumsExampleState extends State<EnhancedEnumsExample> {
         break;
       case InvoiceType.corporate:
       //case InvoiceType.other:
+      default:
     }
   }
 
   Widget _buildBody() {
-    return Center(
+    /*  return Center(
       child: Text(
         _invoiceType.addressInvoiceTypeId.toString(),
         style: Theme.of(context).textTheme.headlineLarge,
       ),
-    );
+    ); */
 
-    /*  return Center(
+    return Center(
       child: Text(
-        _invoiceType.idAsString(),
+        _invoiceType.property2.toString(),
         // _invoiceType.getInvoiceName,
         // _invoiceType.print(),
         style: Theme.of(context).textTheme.headlineLarge,
       ),
-    ); */
+    );
   }
 }
