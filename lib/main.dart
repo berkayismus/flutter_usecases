@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_usecases/riverpod_examples/todo_list/todo_list_page.dart';
+import 'package:flutter_usecases/enhanced_enums/enhanced_enums_example.dart';
 
 // * bu projede denemek istediğim şeyleri uyguluyorum
 
@@ -23,7 +23,7 @@ class MyApp extends ConsumerWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Flutter Usecases",
-      home: TodoListPage(),
+      home: EnhancedEnumsExample(),
     );
   }
 }
