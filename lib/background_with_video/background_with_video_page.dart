@@ -42,8 +42,12 @@ class _BackgroundWithVideoPageState extends State<BackgroundWithVideoPage> {
     return Scaffold(
       body: Stack(
         children: [
-          Chewie(
-            controller: _chewieController,
+          SizedBox(
+            width: double.infinity,
+            height: double.infinity,
+            child: Chewie(
+              controller: _chewieController,
+            ),
           ),
           const Center(
             child: Text(

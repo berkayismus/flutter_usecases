@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_usecases/background_with_video/background_with_video_page.dart';
+import 'package:flutter_usecases/background_with_video/video_player_standard.dart';
 
 // * bu projede denemek istediğim şeyleri uyguluyorum
 
@@ -23,7 +23,7 @@ class MyApp extends ConsumerWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Flutter Usecases",
-      home: BackgroundWithVideoPage(),
+      home: VideoPlayerStandard(),
     );
   }
 }
